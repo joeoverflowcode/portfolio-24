@@ -1,27 +1,32 @@
 import { Element, Link, Link as LinkScroll } from "react-scroll";
 import Button from "../components/Button";
+import Download from "../components/Download";
 
 const Hero = () => {
   return (
-    <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
+    <section className="relative pt-60 pb-60 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
       <Element name="hero">
         <div className="container">
           <div className="relative z-2 max-w-512 max-lg:max-w-388">
-            <div className="caption small-2 uppercase text-p3">
-              A Digital Marketing Tool
-            </div>
+            <p className="caption small-2 uppercase ">
+              Based in Dallas, Texas
+            </p>
             <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
-              Amazingly Simple
+              Web Developer
             </h1>
-            <p className="max-w-440 mb-14 body-1 max-md:mb-10">Inovative technology that your clients are going to love. Give your agency an edge amongst competitors. <br />
+            <p className="max-w-440 mb-14 body-1 max-md:mb-10">Hi, I'm Joe, I help companies achieve their web development and technology goals. <br />
             {/* results-driven, <br/> */}
           </p>
-             <LinkScroll to="features" offset={-100} spy smooth>
-              <Button icon={`${import.meta.env.BASE_URL}/images/zap.svg`}>Try it now</Button>
-             </LinkScroll>
+          <Download />
+             {/* <LinkScroll to="features" offset={-100} spy smooth>
+              <Button 
+              icon={`${import.meta.env.BASE_URL}/images/download.svg`}
+              className="">Resume</Button>
+             </LinkScroll> */}
+
           </div>
-          <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
-            <img src={`${import.meta.env.BASE_URL}/images/hero.png`} className="size-1230"/>
+          <div className="absolute -top-32 left-[calc(50%-360px)] w-[1230px] pointer-events-none hero-img_res ">
+            <img src={`${import.meta.env.BASE_URL}/images/hero03.png`} className="size-1230"/>
           </div>
         </div>
       </Element>

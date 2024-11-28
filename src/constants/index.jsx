@@ -1,26 +1,30 @@
+import {
+  canva, figma, javascript, next, react, tailwind, typescript, express
+} from '../public/images/tech'
+
 const withBaseURL = (path) => `${import.meta.env.BASE_URL}${path}`
 
-export const features = [
+export const studies = [
     {
       id: "0",
       icon: withBaseURL("/images/feature-1.png"),
-      caption: "Easy integration",
-      title: "Work smarter not harder",
-      text: "With Square 205, tedious social marketing tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, without the jitters.",
+      caption: "July 2024",
+      title: "Client Authentication",
+      text: "Authentication is a big part of gaining your customer's loyalty. Having a seemless process to verify their identity is paramount to web development and is part of almost every public website. Read more about how I approached and help solve a real-world business need to authenticate clients.",
       button: {
-        icon: withBaseURL("/images/magictouch.svg"),
-        title: "Watch the demo",
+        icon: withBaseURL("/images/docs.svg"),
+        title: "Read More",
       },
     },
     {
       id: "1",
       icon: withBaseURL("/images/feature-2.png"),
-      caption: "Secure & trustworthy",
-      title: "Sleep easy, we got your back",
-      text: "Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Square 205 helps keeps your information secure and locked up tighter than Fort Knox. ",
+      caption: "January 2024",
+      title: "Lead Conversions",
+      text: "Landing Pages not only give your audience visibilty to your business, but it should also help you generate the maximum amount of leads in order to grow your business. Not all websites are the built the same that help you generate business. Read more about how I helped a company generate more leads with some modern web designs ",
       button: {
         icon: withBaseURL("/images/docs.svg"),
-        title: "Read the docs",
+        title: "Read More",
       },
     },
   ];
@@ -29,7 +33,7 @@ export const features = [
     {
       id: "0",
       icon: withBaseURL("/images/detail-1.png"),
-      title: "Automated schedule",
+      title: "Efficient",
     },
     {
       id: "1",
@@ -48,60 +52,60 @@ export const features = [
     },
   ];
 
-  export const plans = [
-    {
-      id: '0',
-      title: 'Core',
-      priceMonthly: 19,
-      priceYearly: 12,
-      caption: 'Best for solo creators',
-      features: [
-        '100MB Cloud storage',
-        '100+ prompt templates',
-        '5 projects',
-        '24/7 support',
-      ],
-      icon: withBaseURL('/images/circle.svg'),
-      logo: withBaseURL('/images/plan-1.png'),
-    },
-    {
-      id: '1',
-      title: 'Overdrive',
-      priceMonthly: 79,
-      priceYearly: 59,
-      caption: 'Most popular plan',
-      features: [
-        'All Starter features',
-        '1TB additional storage',
-        'Unlimited projects',
-        'Analytics',
-      ],
-      icon: withBaseURL('/images/triangle.svg'),
-      logo: withBaseURL('/images/plan-2.png'),
-    },
-    {
-      id: '2',
-      title: 'Team',
-      priceMonthly: 39,
-      priceYearly: 29,
-      caption: 'Exclusively for teams',
-      features: [
-        'All Overdrive features',
-        '10TB additional storage',
-        '50% off per member',
-        'Real-time collaboration',
-      ],
-      icon: withBaseURL('/images/hexagon.svg'),
-      logo: withBaseURL('/images/plan-3.png'),
-    },
-  ];
+  // export const plans = [
+  //   {
+  //     id: '0',
+  //     title: 'Core',
+  //     priceMonthly: 19,
+  //     priceYearly: 12,
+  //     caption: 'Best for solo creators',
+  //     features: [
+  //       '100MB Cloud storage',
+  //       '100+ prompt templates',
+  //       '5 projects',
+  //       '24/7 support',
+  //     ],
+  //     icon: withBaseURL('/images/circle.svg'),
+  //     logo: withBaseURL('/images/plan-1.png'),
+  //   },
+  //   {
+  //     id: '1',
+  //     title: 'Overdrive',
+  //     priceMonthly: 79,
+  //     priceYearly: 59,
+  //     caption: 'Most popular plan',
+  //     features: [
+  //       'All Starter features',
+  //       '1TB additional storage',
+  //       'Unlimited projects',
+  //       'Analytics',
+  //     ],
+  //     icon: withBaseURL('/images/triangle.svg'),
+  //     logo: withBaseURL('/images/plan-2.png'),
+  //   },
+  //   {
+  //     id: '2',
+  //     title: 'Team',
+  //     priceMonthly: 39,
+  //     priceYearly: 29,
+  //     caption: 'Exclusively for teams',
+  //     features: [
+  //       'All Overdrive features',
+  //       '10TB additional storage',
+  //       '50% off per member',
+  //       'Real-time collaboration',
+  //     ],
+  //     icon: withBaseURL('/images/hexagon.svg'),
+  //     logo: withBaseURL('/images/plan-3.png'),
+  //   },
+  // ];
 
-  export const faq = [
+  export const projects = [
     {
       id: "0",
-      question: "How easy is it to setup Square 205?",
+      question: "Texas Coding Club",
       answer:
-        "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+        "Description about Texas Coding Club",
     },
     {
       id: "2",
@@ -326,30 +330,90 @@ export const features = [
       </svg>
     );
   };
-  
-  export const links = [
+  export const socials = [
     {
       id: "0",
-      title: "Ios",
-      icon: <Ios />,
+      title: "x",
+      icon: withBaseURL("/images/socials/x.svg"),
       url: "#",
     },
     {
       id: "1",
-      title: "Android",
-      icon: <Android />,
+      title: "Threads",
+      icon: withBaseURL("/images/socials/threads.svg"),
       url: "#",
     },
     {
       id: "2",
-      title: "Windows",
-      icon: <Windows />,
+      title: "Instagram",
+      icon: withBaseURL("/images/socials/instagram.svg"),
       url: "#",
     },
     {
       id: "3",
-      title: "Web",
-      icon: <Web />,
+      title: "Discord",
+      icon: withBaseURL("/images/socials/discord.svg"),
       url: "#",
+    },
+  ]
+
+
+  export const tech = [
+    {
+      id: "0",
+      title: "Figma",
+      icon: figma,
+      width: 26,
+      height: 36,
+    },
+    {
+      id: "1",
+      title: "Express",
+      icon: express,
+      width: 34,
+      height: 36,
+    },
+    {
+      id: "2",
+      title: "Canva",
+      icon: canva,
+      width: 36,
+      height: 28,
+    }, 
+     {
+      id: "5",
+      title: "JavaScript",
+      icon: javascript,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "3",
+      title: "Next",
+      icon: next,
+      width: 34,
+      height: 35,
+    },
+    {
+      id: "4",
+      title: "React",
+      icon: react,
+      width: 34,
+      height: 34,
+    },
+  
+    {
+      id: "6",
+      title: "TypeScript",
+      icon: typescript,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "7",
+      title: "Tailwind",
+      icon: tailwind,
+      width: 38,
+      height: 32,
     },
   ];

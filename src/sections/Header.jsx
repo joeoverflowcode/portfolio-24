@@ -32,10 +32,10 @@ const Header = () => {
   )
 
   return (
-    <header className={clsx('fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-8', hasScrolled && 'py-2 bg-black-100 backdrop-blur-[8px]')}>
+    <header className={clsx('fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-8', hasScrolled && 'py-6 bg-black-100 backdrop-blur-[8px]')}>
       <div className="container flex h-14 items-center max-lg:px-5">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
-          <img src={`${import.meta.env.BASE_URL}/images/205.svg`} width={220} height={100} alt="" />
+          <img src={`${import.meta.env.BASE_URL}/images/brand.svg`} width={220} height={100} alt="" />
         </a>
 
         <div className={clsx("w-full max-lg:fixed max-lg:top-0 max-lg:left-0 mag-lg:w-full max-lg:bg-s2 max-lg:opacity-0", isOpen ? "max-lg:opacity-100": "max-lg:pointer-events-none")}>
@@ -43,9 +43,9 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="features" />
+                  <NavLink title="tech stack" />
                   <div className="dot" />
-                  <NavLink title="pricing" />
+                  <NavLink title="case studies" />
                 </li>
 
                 <li className="nav-logo">
@@ -58,18 +58,18 @@ const Header = () => {
 
                   )}>
                     <img
-                      src={`${import.meta.env.BASE_URL}/images/205.svg`}
-                      width={180}
-                      height={55}
+                      src={`${import.meta.env.BASE_URL}/images/brand.svg`}
+                      width={260}
+                      height={65}
                       alt="logo"
                     />
                   </LinkScroll>
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="faq" />
+                  <NavLink title="projects" />
                   <div className="dot" />
-                  <NavLink title="download" />
+                  <NavLink title="about" />
                 </li>
               </ul>
             </nav>
@@ -81,8 +81,8 @@ const Header = () => {
           </div>
         </div>
 
-        <button className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center" onClick={() => setIsOpen((prevState) => !prevState)}>
-            <img src={`${import.meta.env.BASE_URL}/images/${ isOpen ? "close" : "magic"}.svg`} alt="magic" className="size-1/2 object-contain"/>
+        <button className="lg:hidden z-2 size-12 border border-purple-400/25 rounded-[10px] flex justify-center items-center" onClick={() => setIsOpen((prevState) => !prevState)}>
+            <img src={`${import.meta.env.BASE_URL}/images/${ isOpen ? "close02" : "menu03"}.svg`} alt="magic" className="size-3/4 object-contain"/>
         </button>
       </div>
     </header>

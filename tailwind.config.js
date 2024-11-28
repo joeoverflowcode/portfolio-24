@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        p1: '#2EF2FF',
-        p2: '#3C52D9',
-        p3: '#C8EA80',
+        p1: '#5061EB',
+        p2: '#FFC61E',
+        p3: '#2E41AB',
         p4: '#EAEDFF',
         p5: '#C4CBF5',
         s1: '#080D27',
@@ -80,6 +80,11 @@ export default {
         280: '0 0 280px',
         256: '0 0 256px',
         100: '0 0 100%',
+      },
+      backgroundImage: {
+        "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
+        "conic-gradient":
+          "conic-gradient(from 225deg, #457fe5, #3058a0, #b87eb0,#3058a0, #9163cd)",
       },
     },
   },

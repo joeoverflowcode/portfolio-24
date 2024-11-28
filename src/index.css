@@ -141,7 +141,7 @@
   }
 
   .caption {
-    @apply small-2 mb-5 uppercase text-p3;
+    @apply small-2 mb-5 uppercase text-[#F6B814];
   }
 
   .scroll-hide::-webkit-scrollbar {
@@ -168,7 +168,7 @@
   }
 
   .dot {
-    @apply size-1.5 rounded-full bg-p2 max-lg:hidden;
+    @apply size-1.5 rounded-full bg-blue-700 max-lg:hidden;
   }
 
   .sidebar-before {
@@ -312,4 +312,104 @@
   }
 
   /*  END of Footer*/
+}
+
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+
+
+.rotate-45 {
+  @apply rotate-[45deg]
+}
+
+.rotate-90 {
+  @apply rotate-[90deg]
+}
+
+.rotate-135 {
+  @apply rotate-[135deg]
+}
+
+.rotate-180 {
+  @apply rotate-[180deg]
+}
+
+.rotate-225 {
+  @apply rotate-[225deg]
+}
+
+.rotate-270 {
+  @apply rotate-[270deg]
+}
+
+.rotate-315 {
+  @apply rotate-[315deg]
+}
+
+.rotate-360 {
+  @apply rotate-[360deg]
+}
+
+.-rotate-45 {
+  @apply rotate-[-45deg]
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg]
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg]
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg]
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg]
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg]
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg]
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg]
 }
