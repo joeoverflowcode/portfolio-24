@@ -2,52 +2,57 @@ import clsx from "clsx";
 import React, { useState } from "react";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
+import Button from "./Button";
 
-const Project = ({ item, index }) => {
-  const [activeId, setActiveId] = useState(null);
-  const active = activeId === item.id;
-
+const Project = ({ id, image, name, date, text, tech }) => {
   return (
-    <div className="relative z-2 mb-16">
-      <div
-        className="group relative flex cursor-pointer items-center justify-between gap-10 px-7"
-        onClick={() => {
-          setActiveId(activeId === item.id ? null : item.id);
-        }}
-      >
-        <div className="flex-1">
-          <div className="small-compact mb-1.5 text-p3 max-lg:hidden">
-            {index < 10 ? "0" : ""}
-            {index}
-          </div>
-          <div
-            className={clsx(
-              "h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center",
-              active && "max-lg:text-p1"
-            )}
-          >
-            {item.question}
+    <div
+    className={`relative h-full w-full min-w-[620px] lg:min-w-[800px] bg-cover bg-no-repeat`}
+    >
+    <img
+      src={image}
+      alt={``}
+      className="absolute inset-0 w-full h-full object-cover lg:rounded-[60px] 2xl:rounded-[60px] opacity-40"
+    />
+      <div className="absolute inset-0 flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10 border-2 border-p3 lg:rounded-[60px] 2xl:rounded-[60px]">
+        <div className="flex gap-4 w-full h-full">
+          <div className="absolute flex flex-col w-1/2">
+            <img src="./images/feature-1.png" className="w-16 lg:w-20 " />
+            <h1 className="flex h5 lg:h4 ">{name}</h1>
+            <p className="body-1">{date}</p>
+            <p className="">{text}</p>
           </div>
         </div>
 
-        <div
-          className={clsx(
-            "faq-icon relative flex size-12 items-center justify-center rounded-full border-2 border-s2 shadow-400 transition-all duration-500 group-hover:border-s4",
-            active && "before:bg-p1 after:rotate-0 after:bg-p1"
-          )}
-        >
-          <div className="g4 size-11/12 rounded-full shadow-300" />
+
+        <div className="flex justify-between w-1/2 md:w-full gap-6">
+            <span className="flex -space-x-4 overflow-hidden items-center">
+              {tech.map((icon, id) => (
+                <div
+                  key={id}
+                  className="bg-black border-2 border-white rounded-full flex items-center justify-center w-12 h-12 p-1 m-1"
+                >
+                  <img
+                    src={icon.icon}
+                    alt={id}
+                    width={icon.width}
+                    className="inline-block items-center "
+                  />
+                </div>
+              ))}
+            </span>
+            
+            <div className="flex items-center">
+
+            <Button markerfill="#EAEDFF"
+             containerClassName="text-[#EAEDFF] hidden lg:block">View Project</Button>
+            </div>
+       
+            
         </div>
+        <Button markerfill="#EAEDFF"
+             containerClassName="text-[#EAEDFF] mt-6 block lg:hidden">View Project</Button>
       </div>
-
-      <SlideDown>
-        {activeId === item.id && (<div className="body-3 px-7 py-3.5">{item.answer}</div>)}
-        </SlideDown>
-
-        <div className={clsx('absolute g5 -bottom-7 -top-7 left-0 right-0 -z-1 rounded-3xl opacity-0 transition-opacity duration-500', active && "opacity-100")}>
-          <div className="g4 absolute inset-0.5 -z-1 rounded-3xl"/>
-          <div className="absolute left-8 top-0 h-0.5 w-40 bg-p1"/>
-        </div>
     </div>
   );
 };

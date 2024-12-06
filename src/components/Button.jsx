@@ -12,7 +12,7 @@ const Button = ({icon,children, href, containerClassName, onClick, markerfill}) 
             <img src={icon} alt="circle" className="size-10 mr-2 object-contain z-10" />
         )}
 
-        <span className="relative z-2 font-poppins base-bold text-p1 uppercase">
+        <span className="relative z-2 font-poppins base-bold text-p4 uppercase">
             {children}
         </span>
     </span>

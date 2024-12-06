@@ -2,7 +2,8 @@ import React from 'react'
 
 const Download = () => {
   return (
-    /* From Uiverse.io by adamgiebl */ 
+   
+  <a target="_blank" rel="noopener noreferrer" href="./2024AguadoResume.pdf" >
 <button className="cssbuttons-io-button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +19,7 @@ const Download = () => {
   </svg>
   <span>Resume</span>
 </button>
+  </a>
 
   )
 }

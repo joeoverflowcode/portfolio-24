@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { testimonials } from "../constants/index";
+// import { testimonials } from "../constants/index";
 import TestimonialItem from "../components/TestimonialItem";
 
 const Testimonials = () => {

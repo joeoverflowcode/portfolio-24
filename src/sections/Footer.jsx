@@ -2,18 +2,18 @@ import { socials } from "../constants/index.jsx";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container py-10">
+    <footer className="g7">
+      <div className="container py-4">
         <div className="flex w-full max-md:flex-col">
           <div className="small-compact flex flex-1 flex-wrap items-center justify-center gap-5">
-            <p className="opacity-70">Copyright, Joe Aguado 2024</p>
+            <p className="opacity-70">Copyright, Joe Aguado</p>
           </div>
-          <div className="flex items-center justify-center sm:ml-auto">
+          <div className="flex items-center justify-center md:ml-auto">
             <p className="legal-after relative mr-9 text-p5 transition-all duration-500 hover:text-p1">
-              Privacy Policy
+            2024 Portfolio
             </p>
             <p className="text-p5 transition-all duration-500 hover:text-p1">
-              Terms of Use
+            NT Solutions
             </p>
           </div>
 

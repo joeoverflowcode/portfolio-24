@@ -350,6 +350,37 @@
 }
 
 
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-contact {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ad538900;
+
+  border: 2px solid white;
+
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 1em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 1em 1em -0.5em #4d36d0be;
+}
+
+
 .rotate-45 {
   @apply rotate-[45deg]
 }
@@ -413,3 +444,16 @@
 .-rotate-360 {
   @apply rotate-[-360deg]
 }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+

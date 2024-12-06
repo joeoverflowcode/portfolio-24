@@ -7,6 +7,9 @@ import Testimonials from "./sections/Testimonials"
 // import Download from "./sections/Download"
 import Tech from "./sections/Tech"
 import Footer from "./sections/Footer"
+import About from "./sections/About"
+
+
 
 const App = () => {
   return (
@@ -14,12 +17,15 @@ const App = () => {
       <Header/>
       <Hero/>
       <Tech />
-      {/* <Studies /> */}
+      <Studies />
       {/* <Pricing /> */}
-      {/* <Projects /> */}
+      <Projects />
+      <About />
       {/* <Testimonials /> */}
       {/* <Download /> */}
+      {/* <RightCurve/> */}
       <Footer />
+
     </main>
   )
 }
