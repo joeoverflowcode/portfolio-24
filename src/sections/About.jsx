@@ -19,7 +19,7 @@ const About = () => {
             </div>
 
             <div className="z-20 flex flex-col container ">
-              <div className="relative min-w-[440px]">
+              <div className="relative min-w-[340px]">
               <h1 className="h3 md:h2">About Joe</h1>
                 <p className="body-3 mt-4 mb-10">Hi, I’m Joe, I’m a web developer based out of Dallas, Texas. I’m passionate about finding ways that people and software can work together to make life better. I’m currently working on a few freelance projects for client’s in the DFW and NYC area.  
                   <br /><br />
